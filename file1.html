@@ -1,26 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Windy API Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windy API Feed</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="windy"></div>
-    <script>
-        const apiKey = 'x1xLatrDTSn7Lyz3qv5N2nnSz2x5q38S'; // Replace with your Windy API key
-        const options = {
-            key: apiKey,
-            lat: 51.5072, // Latitude of the location you want
-            lon: -0.1276, // Longitude of the location you want
-            zoom: 5, // Zoom level
-        };
-        const embed = windyInit(options, windyAPI => {
-            // Access Windy API functions here
-            const picker = new windyAPI.ui.Picker(options);
-            picker.on('pickerOpened', latLon => {
-                // Handle data when picker is opened
-            });
-        });
-    </script>
-    <script src="https://api.windy.com/assets/map-forecast/libBoot.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
