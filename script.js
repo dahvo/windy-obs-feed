@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Your Windy API key
-    const windyKey = 'x1xLatrDTSn7Lyz3qv5N2nnSz2x5q38S';
+    const windyKey = WINDY_API_KEY;
 
     // Windy API initialization options
     const options = {
